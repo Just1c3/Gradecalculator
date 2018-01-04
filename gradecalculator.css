@@ -1,0 +1,7 @@
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+body {
+    background-image: url("https://res.cloudinary.com/teepublic/image/private/s--bAGLHIGo--/t_Preview/b_rgb:ffffff,c_limit,f_jpg,h_630,q_90,w_630/v1502240394/production/designs/1803286_2.jpg");
+}

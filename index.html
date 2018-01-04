@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grade Calculator</title>
+    <script src="gradecalculator.js"></script>
+    <link rel="stylesheet" href="gradecalculator.css"/>
+</head>
+<center>
+<body>
+<div id="title" align="middle" font-size="90">Grade Calculator</div>
+<div id="title2"  class="text" align="middle" font-size="90">Find out your final grade:</div><table width="400">
+  <table align="center" height="500" width="500">
+    <tr>
+        <th>Category</th>
+        <th>Percentage</th>
+        <th>Weight</th>
+    </tr>
+    <tr id="Test">
+        <td align="center" height="100" width="100"> Tests</td>
+        <td> <input id="tests" value="85"> </input> </td>
+        <td> <input id="testsWeight" value="40"> </input> </td>
+    </tr>
+    <tr id = "Quiz">
+        <td align="center" height="100" width="100"> Quizzes</td>
+        <td> <input id="quizzes" value="85"> </input> </td>
+        <td> <input id="quizzesWeight" value="10"> </input> </td>
+    </tr>
+    <tr id="Hw">
+        <td align="center" height="100" width="100">Homework</td>
+        <td> <input id= "homework" value="90"> </input> </td>
+        <td> <input id="homeworkWeight" value="5"> </input> </td>
+    </tr>
+    <tr id="Midterms">
+        <td align="center" height="100" width="100">Midterms</td>
+        <td> <input id= "midterm" value="86"> </input> </td>
+        <td> <input id="midtermWeight" value="25"> </input> </td>
+    </tr>
+  </table>
+    <button align="center" id="calculate" onclick="calculateCurrentGrade()">Calculate Your Current Grade</button>
+    <div id="currentGrade"></div>
+    <div id="neededGrade">What grade do you want? <input type="text" id="wantedGrade" size="2"></div>
+    <div id="finalWeight">What is you final worth? <input type="text" id="final" size="2"></div>
+    <button align="center" id="calculateFinalGrade" onclick="calculateGradeNeeded()">Calculate Your Final Grade</button>
+    <div id="finalGrade"></div>
+</center>
+</body>
+</html>
